@@ -21,4 +21,4 @@ The following software will consist the AI environment
 * **Virtualization**
   * [KVM](https://www.linux-kvm.org/page/Main_Page)
 
-Next -> [Getting Started](./docs/getting_started.md)
+Next -> [Getting Started](./getting_started.md)

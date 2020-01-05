@@ -1,5 +1,5 @@
 # Getting Started
-In the [introduction](../READMe.md) page we have listed the software, we can think of them as our ingredients. 
+In the [introduction](../README.md) page we have listed the software, we can think of them as our ingredients. 
 There are several recipes on how to proceed and we will discuss each one.
 
 ## Current set-up

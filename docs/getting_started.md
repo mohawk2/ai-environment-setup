@@ -29,7 +29,6 @@ sudo lshw -C display
   * via task manager, [howto](https://www.howtogeek.com/414201/how-to-check-what-graphics-card-gpu-is-in-your-pc/)
   * via dxdiag, [howto](https://help.sketchup.com/en/sketchup/how-can-i-find-out-which-graphics-card-i-have-my-pc)
   
-  **Portability**
 **How important is portability?**
 portability of the AI enviroment
 * Not at all

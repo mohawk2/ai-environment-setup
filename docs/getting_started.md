@@ -30,8 +30,8 @@ sudo lshw -C display
   * via dxdiag, [howto](https://help.sketchup.com/en/sketchup/how-can-i-find-out-which-graphics-card-i-have-my-pc)
   
   **Portability**
-
-How important is portability?
+**How important is portability?**
+portability of the AI enviroment
 * Not at all
 * Somewhat
 * Very

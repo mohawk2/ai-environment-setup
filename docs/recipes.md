@@ -1,11 +1,11 @@
 # Recipes
 
-## Dedicated
+## [Dedicated](https://en.wikipedia.org/wiki/Operating_system)
 
 Dedicated Operating System on a personal computer. You may have an old laptop or desktop with an outdated OS 
 and you would like to re-purpose it.
 
-## Dual
+## [Dual or multiple](https://en.wikipedia.org/wiki/Multi-booting)
 
 Dual boot; two operating systems on a personal computer. You may prefer to keep existing installation *as-is* and 
 add another operating system on the computer without affecting current set-up.

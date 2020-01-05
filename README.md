@@ -19,4 +19,4 @@ The following software will consist the AI environment
 * **GPU SDK**
   * [Nvidia CUDA](https://developer.nvidia.com/cuda-zone)
 
-Next -> [Getting Started](.docs/getting_started.md)
+Next -> [Getting Started](./docs/getting_started.md)

@@ -34,3 +34,5 @@ portability of the AI enviroment
 * Not at all
 * Somewhat
 * Very
+
+Next -> [Recipes](recipes.md)

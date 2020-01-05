@@ -7,15 +7,24 @@ The first step is document what is your current set-up
 
 ### Checklist
 
-What kind of personal desktop will you be using?
+**What kind of personal desktop will you be using?**
 * Laptop
 * Desktop
 
-What is your current operating system?
+**What is your current operating system?**
 * Windows
 * Linux
   * [Ubuntu](https://ubuntu.com/)
   * [Red Hat](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
   * [Suse](https://www.suse.com/)
   * [CentOs](https://www.centos.org/)
- * [MacOs](https://www.apple.com/uk/macos/catalina/)
+  * [MacOs](https://www.apple.com/uk/macos/catalina/)
+  
+**Do You have a Nvidia GPU?**
+* Linux command
+```
+sudo lshw -C display
+```
+* Windows
+ * via task manager, [howto](https://www.howtogeek.com/414201/how-to-check-what-graphics-card-gpu-is-in-your-pc/)
+ * via dxdiag, [howto](https://help.sketchup.com/en/sketchup/how-can-i-find-out-which-graphics-card-i-have-my-pc)

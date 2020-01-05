@@ -18,5 +18,7 @@ The following software will consist the AI environment
 * **Version control for source code**, [Git](https://git-scm.com/)
 * **GPU SDK**
   * [Nvidia CUDA](https://developer.nvidia.com/cuda-zone)
+* **Virtualization**
+  * [KVM](https://www.linux-kvm.org/page/Main_Page)
 
 Next -> [Getting Started](./docs/getting_started.md)

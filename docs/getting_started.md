@@ -26,5 +26,5 @@ The first step is document what is your current set-up
 sudo lshw -C display
 ```
 * Windows
- * via task manager, [howto](https://www.howtogeek.com/414201/how-to-check-what-graphics-card-gpu-is-in-your-pc/)
- * via dxdiag, [howto](https://help.sketchup.com/en/sketchup/how-can-i-find-out-which-graphics-card-i-have-my-pc)
+  * via task manager, [howto](https://www.howtogeek.com/414201/how-to-check-what-graphics-card-gpu-is-in-your-pc/)
+  * via dxdiag, [howto](https://help.sketchup.com/en/sketchup/how-can-i-find-out-which-graphics-card-i-have-my-pc)

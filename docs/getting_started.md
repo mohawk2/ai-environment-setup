@@ -20,7 +20,7 @@ The first step is document what is your current set-up
   * [CentOs](https://www.centos.org/)
   * [MacOs](https://www.apple.com/uk/macos/catalina/)
   
-**Do You have a Nvidia GPU?**
+**Do You have an Nvidia GPU?**
 * Linux command
 ```
 sudo lshw -C display

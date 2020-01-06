@@ -18,7 +18,7 @@ The first step is to document what the current PC set-up
   * [Red Hat](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
   * [Suse](https://www.suse.com/)
   * [CentOs](https://www.centos.org/)
-  * [MacOs](https://www.apple.com/uk/macos/catalina/)
+* [MacOs](https://www.apple.com/uk/macos/catalina/)
   
 **Do You have an Nvidia GPU?**
 * Linux command

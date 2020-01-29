@@ -30,5 +30,5 @@ For Recipes Two, Three and Four
 Currently (as of Dec 2019) I have chosen the Dedicated option and to re-purpose my laptop with [Ubuntu 18.0.4 LTS](http://releases.ubuntu.com/18.04/)
 
 **Instructions**
-**[Dedicated](dedicated.md)**
-**[Virtualization](virtualization.md)**
+* **[Dedicated](dedicated.md)**
+* **[Virtualization](virtualization.md)**

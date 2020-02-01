@@ -13,7 +13,7 @@ sudo apt install default-jdk
 sudo apt-get install awscli -y
 
 # Add user
-sudo useradd tensorflow
+sudo useradd -m tensorflow
 ssh-keygen -b 1024 -f tensorflow -t dsa     
 sudo mkdir -p /home/tensorflow/.ssh
 cat tensorflow.pub | sudo tee -a /home/tensorflow/.ssh/authorized_keys  
@@ -25,8 +25,8 @@ sudo chown -R tensorflow /home/tensorflow
 cd /tmp
 curl -O https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
 bash Anaconda3-2019.10-Linux-x86_64.sh -b -p /home/tensorflow/anaconda3
-source ~/.bashrc
-export PATH=/home/tensorflow/anaconda3/bin:$PATH >> ~/.bashrc
+export PATH=/home/tensorflow/anaconda3/bin:$PATH >> /home/tensorflow/.profile
+#export PATH=/home/tensorflow/anaconda3/bin:$PATH >> /home/tensorflow/.bashrc
 export CONDA_ALWAYS_YES="true"
 conda init
 conda update -n base -c defaults conda
@@ -42,17 +42,15 @@ conda install tensorflow-tensorboard -y
 conda install git -y
 
 # Install UMAKE
-sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
+sudo add-apt-repository ppa:lyzardking/ubuntu-make -y
 sudo apt-get update
 sudo apt-get install ubuntu-make -y
 
 # Install PyCharm
-cd /home/tensorflow
-sudo mkdir ide
-cd ide
-sudo mkdir pycharm
-umake ide pycharm /home/tensorflow/ide/pycharm
+sudo env -u SUDO_UID -u SUDO_GID umake ide pycharm /opt/pycharm
 
 # Install Andoid Studio
-sudo mkdir android
-umake android
+sudo env -u SUDO_UID -u SUDO_GID umake android /opt/android --accept-license
+
+# As a service
+#sudo systemctl enable jupyter-notebook

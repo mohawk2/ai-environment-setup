@@ -30,13 +30,16 @@ echo "tensorflow ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 cd /tmp
 curl -O https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
 bash Anaconda3-2019.10-Linux-x86_64.sh -b -p /opt/anaconda3
-export PATH=/opt/anaconda3/bin:$PATH >> /home/ubuntu/.profile
-export PATH=/opt/anaconda3/bin:$PATH >> /home/ubuntu/.bashrc
-
-sed -i 'export PATH=/opt/anaconda3/bin:$PATH' /home/ubuntu/.profile
-sed -e -i "\$aexport PATH=/opt/anaconda3/bin:$PATH" /home/ubuntu/.profile
+#export PATH=/opt/anaconda3/bin:$PATH >> /home/ubuntu/.profile
+#export PATH=/opt/anaconda3/bin:$PATH >> /home/ubuntu/.bashrc
 
 sed -i -e '$a\' -e 'export PATH=/opt/anaconda3/bin:$PATH' /home/ubuntu/.profile
+sed -i -e '$a\' -e 'export PATH=/opt/anaconda3/bin:$PATH' /home/vagrant/.profile
+
+# -i 'export PATH=/opt/anaconda3/bin:$PATH' /home/ubuntu/.profile
+#sed -e -i "\$aexport PATH=/opt/anaconda3/bin:$PATH" /home/ubuntu/.profile
+
+#sed -i -e '$a\' -e 'export PATH=/opt/anaconda3/bin:$PATH' /home/ubuntu/.profile
 
 #export PATH=/home/tensorflow/anaconda3/bin:$PATH >> /home/tensorflow/.bashrc
 export CONDA_ALWAYS_YES="true"
@@ -73,6 +76,13 @@ sed -i -e '$a\' -e 'export PATH=/opt/android/bin:$PATH' /home/ubuntu/.profile
 
 # As a service
 #sudo systemctl enable jupyter-notebook
+sudo cp /home/vagrant/Anaconda.desktop /usr/share/applications/Anaconda.desktop
+sudo cp /home/vagrant/PyCharm.desktop /usr/share/applications/PyCharm.desktop
+sudo cp /home/vagrant/AndroidStudio.desktop /usr/share/applications/AndroidStudio.desktop
 
-dconf write /org/gnome/shell/favorite-apps "['firefox.desktop', 'Anaconda.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'PyCharm.desktop', 'AndroidStudio.desktop']"
+sudo rm /home/vagrant/Anaconda.desktop
+sudo rm /home/vagrant/PyCharm.desktop
+sudo rm /home/vagrant/AndroidStudio.desktop
+
+
 # https://askubuntu.com/questions/1193496/add-app-to-favorites-from-command-line/1193510

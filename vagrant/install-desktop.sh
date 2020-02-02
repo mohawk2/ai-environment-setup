@@ -3,6 +3,8 @@ set -ex
 
 export DEBIAN_FRONTEND=noninteractive
 
+dconf write /org/gnome/shell/favorite-apps "['firefox.desktop', 'Anaconda.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'PyCharm.desktop', 'AndroidStudio.desktop']"
+
 # Set password for default "ubuntu" user
 echo "ubuntu:ubuntu" | sudo chpasswd
 
@@ -16,6 +18,8 @@ sudo apt-get install ubuntu-desktop -y
 # Install xfce and virtualbox additions.
 
 sudo apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
+
+
 
 # Permit anyone to start the GUI
 # TODO - needed?

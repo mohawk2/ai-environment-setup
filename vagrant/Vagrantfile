@@ -84,9 +84,9 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
-  config.vm.provision "file", source: "Anaconda.desktop", destination: "/usr/share/applications/Anaconda.desktop"
-  config.vm.provision "file", source: "PyCharm.desktop", destination: "/usr/share/applications/PyCharm.desktop"
-  config.vm.provision "file", source: "AndroidStudio.desktop", destination: "/usr/share/applications/AndroidStudio.desktop"
+  config.vm.provision "file", source: "Anaconda.desktop", destination: "/home/vagrant/Anaconda.desktop"
+  config.vm.provision "file", source: "PyCharm.desktop", destination: "/home/vagrant/PyCharm.desktop"
+  config.vm.provision "file", source: "AndroidStudio.desktop", destination: "/home/vagrant/AndroidStudio.desktop"
   config.vm.provision :shell, run: "always", :path => "setup.sh"
   config.vm.provision :shell, run: "always", :path => "git_repos.sh"
   config.vm.provision :shell, run: "always", :path => "install-desktop.sh"

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Development;
+Name=Android Studio
+Comment=Android Studio IDE
+Exec=bash /opt/android/bin/studio.sh
+Type=Application
+Icon=/opt/android/bin/studio.png
+Terminal=false
+StartupNotify=true

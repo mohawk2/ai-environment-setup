@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Development;
+Name=Anaconda Navigator
+Comment=Anaconda
+Exec=bash -c anaconda-navigator
+Type=Application
+Icon=/opt/anaconda3/lib/python3.7/site-packages/anaconda_navigator/static/images/anaconda-icon-256x256.png
+Terminal=false
+StartupNotify=true

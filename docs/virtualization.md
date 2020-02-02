@@ -20,6 +20,10 @@ to repeat those steps every time you would want to create a VM instance; unless 
 #### Hardware
 You will need 50GB of free space
 
+**Highly recommend** 
+* SSD hard drive
+* \>4GB memory provided to the VM
+
 #### Software
 Installation steps:
 * Download [Virtual box](https://www.virtualbox.org/wiki/Downloads) version 6.1 and up
@@ -42,16 +46,16 @@ Clone this git repo using [git](https://git-scm.com/) or any other git supportin
 * type command ```vagrant up```
 * **have a coffee!** as the first time it will download Ubuntu from Vagrant Cloud, subsequent 
 commands to create new VM instances will be much shorter as the OS is stored locally. The software described in the 
-[index](.index.md) are included in the VM instance.
+[index](index.md) are included in the VM instance.
     
 
 You will notice that Vagrant will start executing all the necessary commands to install the software 
 in your VM instance that is created in Virtual Box.
 
-After the successful installation you can login to the newly created Ubuntu VM instance using 
+After the successful installation you can login to the newly created TensorflowRUs VM instance using 
 the credentials
-* username ```tensorflow```
-* password ```tensorflow``` 
+* username ```ubuntu```
+* password ```ubuntu``` 
 
 ## Issues
 If you encounter any issues please raise an GitHub issue on the 

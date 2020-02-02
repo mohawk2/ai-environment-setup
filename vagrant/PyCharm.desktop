@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Development;
+Name=PyCharm CE
+Comment=PyCharm
+Exec=bash /opt/pycharm/bin/pycharm.sh
+Type=Application
+Icon=/opt/pycharm/bin/pycharm.png
+Terminal=false
+StartupNotify=true

@@ -12,8 +12,8 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  #config.vm.box = "ubuntu/bionic64"
-  config.vm.box = "ubuntu/eoan64"
+  config.vm.box = "ubuntu/bionic64"
+  #config.vm.box = "ubuntu/eoan64"
   config.vm.boot_timeout = 2400
   config.vm.network "forwarded_port", guest: 8888, host: 8888,
     auto_correct: true
@@ -68,6 +68,8 @@ Vagrant.configure("2") do |config|
      # Customize the amount of memory on the VM:
      vb.memory = 2048
      vb.cpus = 2
+     #vb.customize ["modifyvm", :id, "--uart1", "0x3F8", "4"]
+     #vb.customize ["modifyvm", :id, "--uartmode1", "file", "./ttyS0.log"]
      #vb.customize ['modifyvm', :id, '--clipboard-mode', 'bidirectional']
    end
 
@@ -82,6 +84,10 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+  config.vm.provision "file", source: "Anaconda.desktop", destination: "/usr/share/applications/Anaconda.desktop"
+  config.vm.provision "file", source: "PyCharm.desktop", destination: "/usr/share/applications/PyCharm.desktop"
+  config.vm.provision "file", source: "AndroidStudio.desktop", destination: "/usr/share/applications/AndroidStudio.desktop"
   config.vm.provision :shell, run: "always", :path => "setup.sh"
+  config.vm.provision :shell, run: "always", :path => "git_repos.sh"
   config.vm.provision :shell, run: "always", :path => "install-desktop.sh"
 end

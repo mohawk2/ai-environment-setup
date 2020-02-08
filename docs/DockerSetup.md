@@ -16,6 +16,12 @@ The terminal should give you a URL to browse to where Jupyter notebook will be r
 
 Verify the Jupyter notebook works by entering the following in a new notebook...
 
+    import tensorflow as tf
+    with tf.compat.v1.Session() as sess:
+        hello = tf.constant('Hello tensorflow')
+        print(sess.run(hello))
+        sess.close()
+
 Note the data isn't necessarily saved to disk, to save data to disk you'll want to do something like this...
 
     docker run -it -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v /Users/{username}/src/docker/jupyter:/tf/home/notebooks tensorflow/tensorflow:2.0.1-py3-jupyter

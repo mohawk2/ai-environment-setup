@@ -27,3 +27,5 @@ Note the data isn't necessarily saved to disk, to save data to disk you'll want 
     docker run -it -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v /Users/{username}/src/docker/jupyter:/tf/home/notebooks tensorflow/tensorflow:2.0.1-py3-jupyter
 
 Now in a jupyter notebook save a file to /home/notebooks/test ( it should be available at /Users/{username}/src/docker/jupyter/test.ipynb )
+
+You can connect pyCharm to a container running tensorflow using the steps documented [here](https://timodenk.com/blog/connecting-pycharm-to-a-tensorflow-docker-container/)

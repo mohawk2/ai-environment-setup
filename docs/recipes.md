@@ -32,3 +32,4 @@ Currently (as of Dec 2019) I have chosen the Dedicated option and to re-purpose 
 **Instructions**
 * **[Dedicated](dedicated.md)**
 * **[Virtualization](virtualization.md)**
+* **[Container - Docker](DockerSetup.md)**
